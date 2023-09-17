@@ -1,9 +1,10 @@
 import { useState } from "react"
-import Achievement from "./Achievement"
+
 import Education from "./Education"
 import Skill from "./Skill"
 
 import photo from "../../assets/photo.jpeg"
+import Experience from "./Experience"
 
 const About = () => {
   const [type, setType] = useState("education")
@@ -62,23 +63,19 @@ const About = () => {
 
           <div className="flex mt-20 mb-40 justify-between w-[60%]">
             <button
-              className={`${
-                type === "education" ? "border-rear" : "border-none"
-              }`}
+              className="text-xl font-medium active:text-rear"
               onClick={() => setType("education")}
             >
               Education
             </button>
             <button
-              className={`${type === "skill" ? "border-rear" : "border-none"}`}
+              className="text-xl font-medium active:text-rear"
               onClick={() => setType("skill")}
             >
               Skills
             </button>
             <button
-              className={`${
-                type === "achievement" ? "border border-rear " : "border-none"
-              }`}
+              className="text-xl font-medium active:text-rear"
               onClick={() => setType("achievement")}
             >
               Experience
@@ -91,7 +88,7 @@ const About = () => {
           ) : type === "skill" ? (
             <Skill />
           ) : type === "achievement" ? (
-            <Achievement />
+            <Experience />
           ) : (
             <Education /> // Default to Education if the type is not recognized.
           )}
