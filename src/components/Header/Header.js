@@ -15,6 +15,16 @@ const Header = () => {
     },
   }
 
+  const handleDownload = async () => {
+    const resumeUrl =
+      "https://drive.google.com/file/d/1WCBkK4XuO2TrNAbYvNHSTFqx_BUei1Y_/view?usp=drivesdk"
+
+    const downloadLink = document.createElement("a")
+    downloadLink.href = resumeUrl
+    downloadLink.download = "Kunal_Hole_Resume.pdf"
+    downloadLink.click()
+  }
+
   return (
     <motion.header
       {...objects}
@@ -36,7 +46,10 @@ const Header = () => {
         <Link to="/project">Project</Link>
         <Link to="/contact">Contact</Link>
       </div>
-      <button className="flex items-center border border-rear rounded-lg px-4 py-2 justify-center hover:text-rear">
+      <button
+        onClick={handleDownload}
+        className="flex items-center border border-rear rounded-lg px-4 py-2 justify-center hover:text-rear"
+      >
         Resume
         <AiOutlineDownload className=" m-2 animate-bounce" />
       </button>
