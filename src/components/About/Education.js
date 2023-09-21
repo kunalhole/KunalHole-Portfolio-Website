@@ -1,6 +1,6 @@
 const Education = () => {
   return (
-    <div className="text-sm font-normal  w-1/2">
+    <div className="text-sm font-normal h-full  md:w-1/2">
       <ul className="space-y-5 pt-5">
         <li className="text-[17px] font-thin">
           <span className="text-[24px] text-rear mb-2 font-medium">

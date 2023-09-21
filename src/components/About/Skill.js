@@ -3,14 +3,22 @@ const Skill = () => {
     <div className="space-y-5">
       <div className="space-y-3">
         <h3 className="text-xl text-rear font-medium">Programming Language</h3>
-        <div className="space-x-3">
-          <button className="bg-cplus rounded-lg px-4 py-2">C++</button>
-          <button className="bg-javascript text-secondary rounded-lg px-4 py-2">
+        <div className="grid grid-cols-3 col-span-3">
+          <button className="bg-cplus px-2 py-2 rounded-lg md:px-4 md:py-2">
+            C++
+          </button>
+          <button className="bg-javascript text-secondary px-2 py-2 rounded-lg md:px-4 md:py-2">
             JavaScript
           </button>
-          <button className="bg-cplus rounded-lg px-4 py-2">C</button>
-          <button className="bg-gray-700 rounded-lg px-4 py-2">Solidity</button>
-          <button className="bg-java rounded-lg px-4 py-2">Java</button>
+          <button className="bg-cplus px-2 py-2 rounded-lg md:px-4 md:py-2">
+            C
+          </button>
+          <button className="bg-gray-700 px-2 py-2 rounded-lg md:px-4 md:py-2">
+            Solidity
+          </button>
+          <button className="bg-java px-2 py-2 rounded-lg md:px-4 md:py-2">
+            Java
+          </button>
         </div>
       </div>
 

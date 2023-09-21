@@ -38,7 +38,7 @@ const Home = () => {
   })
 
   return (
-    <section className="h-full flex flex-col-reverse  items-center justify-around  overflow-x-hidden overflow-y-hidden bg-transparent  md:justify-between  md:w-3/4 md:mx-auto   md:flex-row">
+    <section className="h-screen flex flex-col-reverse  items-center justify-around  overflow-x-hidden overflow-y-hidden bg-transparent  md:justify-between  md:w-3/4 md:mx-auto   md:flex-row">
       <motion.div
         {...leftPart}
         transition={{
@@ -46,8 +46,8 @@ const Home = () => {
         }}
         className=" flex flex-col  items-center justify-start overflow-hidden  space-y-8 md:items-start md:w-3/5"
       >
-        <h2 className="text-primary text-6xl font-semibold">Hari Krishna ,</h2>
-        <h4 className="text-primary font-normal  text-[30px]  mb-1 md:mb-3 md:text-[35px]">
+        <h2 className="text-primary text-4xl md:text-6xl font-semibold">Hari Krishna ,</h2>
+        <h4 className="text-primary text-center font-normal  text-[30px]   md:mb-3 md:text-[35px]">
           I'm Kunal Hole From <span className="text-orange-600">Bh</span>ar
           <span className="text-green-600">at</span>
         </h4>

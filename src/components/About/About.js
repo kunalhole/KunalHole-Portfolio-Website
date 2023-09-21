@@ -10,7 +10,7 @@ const About = () => {
   const [type, setType] = useState("education")
   return (
     <section
-      className="text-primary overflow-hidden h-full"
+      className="text-primary h-full w-full  md:overflow-hidden "
       // id="about"
       // className="text-primary bg-gray-400  w-4/6 mx-auto  h-full  flex  flex-col items-center"
     >
@@ -40,20 +40,20 @@ const About = () => {
         )}
       </div> */}
 
-      <div className="flex justify-between flex-wrap p-10">
-        <div className="w-[35%]">
+      <div className="flex justify-between  flex-wrap p-10">
+        <div className="w-1/2 md:w-[35%]">
           <img
             src={photo}
             alt="photoPic"
-            className="w-full h-3/4 object-contain rounded-4xl"
+            className=" hidden md:inline-block w-full h-3/4 object-contain rounded-4xl "
           />
         </div>
-        <div className="w-[60%] space-y-5">
-          <h1 className="text-5xl font-semibold">
-            <span className="text-6xl text-rear">A</span>bout{" "}
-            <span className="text-6xl text-rear">M</span>e
+        <div className=" w-full flex flex-col items-center md:w-[60%] space-y-5">
+          <h1 className=" text-4xl md:text-5xl font-semibold">
+            <span className="text-5xl md:text-6xl text-rear">A</span>bout{" "}
+            <span className="text-5xl md:text-6xl text-rear">M</span>e
           </h1>
-          <p className="w-9/12 text-slate-300 font-extralight">
+          <p className="w-full md:w-9/12 text-center text-slate-300 font-extralight">
             To secure a challenging position as a Full Stack Web Developer in
             Blockchain where my technical skills, creativity, and
             problem-solving abilities can be utilized to design, develop, and
@@ -61,7 +61,7 @@ const About = () => {
             requirements.
           </p>
 
-          <div className="flex mt-20 mb-40 justify-between w-[60%]">
+          <div className="flex mt-20 mb-40 space-x-4 justify-between md:w-[60%]">
             <button
               className="text-xl font-medium active:text-rear"
               onClick={() => setType("education")}
