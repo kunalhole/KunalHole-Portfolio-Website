@@ -35,13 +35,13 @@ const Contact = () => {
   }
   return (
     <main className="w-full h-full flex justify-center items-center">
-      <section className=" w-1/2 h-4/6 flex flex-col p-5 space-y-10">
-        <div className="flex flex-col justify-center items-center space-y-5">
-          <h1 className="text-primary font-semibold text-4xl">
-            <span className="text-rear text-5xl">C</span>ontact{" "}
-            <span className="text-rear text-5xl">M</span>e
+      <section className=" w-full  md:w-1/2 h-4/6 flex flex-col p-5 space-y-10">
+        <div className="flex flex-col justify-center  items-center space-y-5 ">
+          <h1 className="text-primary font-semibold  text-3xl md:text-4xl">
+            <span className="text-rear text-3xl md:text-5xl">C</span>ontact{" "}
+            <span className="text-rear text-3xl md:text-5xl">M</span>e
           </h1>
-          <p className="text-lg text-primary font-extralight">
+          <p className="text-base text-center md:text-lg text-primary  font-extralight">
             Please fill out the form below to discuss any work opportunities.
           </p>
         </div>
@@ -54,14 +54,14 @@ const Contact = () => {
           <input
             type="text"
             value={name}
-            className="w-1/2 p-3 rounded-lg text-primary font-light bg-transparent border border-rear  focus:border-rear"
+            className="w-3/4 md:w-1/2 p-3 rounded-lg text-primary font-light bg-transparent border border-rear  focus:border-rear"
             placeholder="Your Name"
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="email"
             value={mail}
-            className="w-1/2 p-3 rounded-lg text-primary font-light bg-transparent border border-rear"
+            className=" w-3/4 md:w-1/2 p-3 rounded-lg text-primary font-light bg-transparent border border-rear"
             placeholder="Your Email"
             onChange={(e) => setMail(e.target.value)}
           />
@@ -69,10 +69,10 @@ const Contact = () => {
             placeholder="Your Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-1/2 p-3 bg-transparent font-thin rounded-lg border border-rear text-primary"
+            className="w-3/4 md:w-1/2 p-3 bg-transparent font-thin rounded-lg border border-rear text-primary"
           ></textarea>
           <input
-            className="border border-rear text-primary font-medium px-6 py-4  rounded-lg cursor-pointer hover:text-rear"
+            className="border border-rear px-4 py-2 text-primary font-medium md:px-6 md:py-4  rounded-lg cursor-pointer hover:text-rear"
             type="submit"
             value="Send 📧"
             disabled={!name || !mail || !message}

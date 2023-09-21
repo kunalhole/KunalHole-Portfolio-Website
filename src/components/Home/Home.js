@@ -48,8 +48,8 @@ const Home = () => {
       >
         <h2 className="text-primary text-6xl font-semibold">Hari Krishna ,</h2>
         <h4 className="text-primary font-normal  text-[30px]  mb-1 md:mb-3 md:text-[35px]">
-          I'm Kunal Hole From <span className="text-orange-600">In</span>d
-          <span className="text-green-600">ia</span>
+          I'm Kunal Hole From <span className="text-orange-600">Bh</span>ar
+          <span className="text-green-600">at</span>
         </h4>
         <h2 className="text-primary text-[25px] font-medium md:text-[30px]">
           <span className="text-rear">{text}</span>
