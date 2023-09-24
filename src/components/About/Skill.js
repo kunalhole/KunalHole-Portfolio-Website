@@ -3,8 +3,8 @@ const Skill = () => {
     <div className="space-y-5">
       <div className="space-y-3">
         <h3 className="text-xl text-rear font-medium">Programming Language</h3>
-        <div className="grid grid-cols-3 col-span-3">
-          <button className="bg-cplus px-2 py-2 rounded-lg md:px-4 md:py-2">
+        <div className=" space-x-2 space-y-2">
+          <button className="bg-cplus px-2 py-2 rounded-lg md:px-4 md:py-2 col-span-2">
             C++
           </button>
           <button className="bg-javascript text-secondary px-2 py-2 rounded-lg md:px-4 md:py-2">
@@ -24,7 +24,7 @@ const Skill = () => {
 
       <div className="space-y-5">
         <h3 className="text-xl text-rear font-medium">FrameWorks & Libiries</h3>
-        <div className="space-x-3  space-y-2">
+        <div className="space-y-3 space-x-2">
           <button className="bg-react rounded-lg px-4 py-2">React.Js</button>
           <button className="bg-next text-secondary rounded-lg px-4 py-2">
             Next.Js

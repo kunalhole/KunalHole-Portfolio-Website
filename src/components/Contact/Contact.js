@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useRef } from "react"
 import emailjs from "@emailjs/browser"
+import { motion } from "framer-motion"
 
 const Contact = () => {
   const [name, setName] = useState("")
@@ -13,6 +14,7 @@ const Contact = () => {
     console.log(name)
     console.log(mail)
     console.log(message)
+
     // emailjs
     //   .sendForm(
     //     "service_cw9wrsh",
@@ -35,7 +37,16 @@ const Contact = () => {
   }
   return (
     <main className="w-full h-full flex justify-center items-center">
-      <section className=" w-full  md:w-1/2 h-4/6 flex flex-col p-5 space-y-10">
+      <motion.section
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className=" w-full  md:w-1/2 h-4/6 flex flex-col p-5 space-y-10"
+      >
         <div className="flex flex-col justify-center  items-center space-y-5 ">
           <h1 className="text-primary font-semibold  text-3xl md:text-4xl">
             <span className="text-rear text-3xl md:text-5xl">C</span>ontact{" "}
@@ -78,7 +89,7 @@ const Contact = () => {
             disabled={!name || !mail || !message}
           ></input>
         </form>
-      </section>
+      </motion.section>
     </main>
   )
 }
