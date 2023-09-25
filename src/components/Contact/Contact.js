@@ -48,11 +48,11 @@ const Contact = () => {
         className=" w-full  md:w-1/2 h-4/6 flex flex-col p-5 space-y-10"
       >
         <div className="flex flex-col justify-center  items-center space-y-5 ">
-          <h1 className="text-primary font-semibold  text-3xl md:text-4xl">
-            <span className="text-rear text-3xl md:text-5xl">C</span>ontact{" "}
-            <span className="text-rear text-3xl md:text-5xl">M</span>e
+          <h1 className="text-primary font-semibold  text-4xl md:text-4xl">
+            <span className="text-rear text-5xl md:text-5xl">C</span>ontact{" "}
+            <span className="text-rear text-5xl md:text-5xl">M</span>e
           </h1>
-          <p className="text-base text-center md:text-lg text-primary  font-extralight">
+          <p className="text-xl text-center md:text-lg text-primary  font-extralight">
             Please fill out the form below to discuss any work opportunities.
           </p>
         </div>

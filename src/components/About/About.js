@@ -47,7 +47,7 @@ const About = () => {
       <motion.div
         {...contentPart}
         transition={{
-          delay:0.2
+          delay: 0.2,
         }}
         className="w-full flex flex-col items-center md:w-[60%] space-y-10"
       >
@@ -62,7 +62,7 @@ const About = () => {
           high-quality web applications that meet client requirements.
         </p>
 
-        <div className="flex mt-20 mb-40 space-x-4 justify-between md:w-[60%]">
+        <div className="flex mt-20 mb-40 space-x-8 md:space-x-4 justify-between md:w-[60%]">
           <button
             className="text-xl font-medium active:text-rear"
             onClick={() => setType("education")}
