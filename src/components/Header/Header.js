@@ -35,7 +35,7 @@ const Header = () => {
     >
       <h2
         onClick={() => navigate("/")}
-        className=" text-[3rem] font-bold cursor-pointer "
+        className="text-[2rem]  flex  md:text-[3rem] font-bold cursor-pointer "
       >
         <span className="text-rear">K </span>unal
       </h2>
